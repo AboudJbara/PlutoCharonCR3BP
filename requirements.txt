@@ -1,3 +1,2 @@
-The following Python libraries are required to run the code:
-* numpy
-* matplotlib
+numpy
+matplotlib
