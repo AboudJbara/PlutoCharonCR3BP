@@ -33,10 +33,12 @@ plotPointsY = []
 #Lagrange
 L1, L2, L3, L4, L5 = getLPoints(mu)
 
+currentPoint = L4
 
 # Building Z-Grid
-Om = omegaValues(x,y, mu, True)[0]
-currentC = getJacobiC(Om,vx,vy)
+Om = omegaValues(currentPoint[0], currentPoint[1], mu, True)[0]
+
+currentC = getJacobiC(Om,0,0) + 1e-3
 
 xPoints = np.linspace(-1.5, 1.5, gridLength)
 yPoints = np.linspace(-1.5, 1.5, gridLength)
@@ -90,3 +92,4 @@ ax.set_aspect(1)
 
 
 plt.show()
+
