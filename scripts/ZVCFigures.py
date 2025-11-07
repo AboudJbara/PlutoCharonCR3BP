@@ -66,7 +66,7 @@ plt.xlim(-1.5,1.5)
 plt.ylim(-1.5,1.5)
 plt.xlabel("x-Axis")
 plt.ylabel("y-Axis")
-plt.title(r"Chaotic trajectory near L3 with $\mu$ = " + f"{mu:.4f} (Pluto-Charon)")
+plt.title(r"Zero-Velocity Curve Figures")
 
 SPACECRAFT = Circle((currentPoint[0] + 1e-2, currentPoint[1]), 0.02, facecolor = "red")
 
