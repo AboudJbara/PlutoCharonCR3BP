@@ -5,7 +5,7 @@ REQUIRES THE FOLLOWING PYTHON LIBRARIES TO RUN:
 * numpy
 * matplotlib
 
-To install dependencies, run:
+To install dependencies, cd to the folder containing ```requirements.txt``` on Command Prompt, and run:
 ```bash
 pip install -r requirements.txt
 ```
