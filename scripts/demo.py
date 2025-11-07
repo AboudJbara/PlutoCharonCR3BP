@@ -30,11 +30,11 @@ plotPointsY = []
 #Lagrange
 L1, L2, L3, L4, L5 = getLPoints(mu)
 
-CAtLagrangePoint = getJacobiC(omegaValues(L1[0], L1[1], mu, True)[0], 0, 0)
-
 #               #
 currentPoint = L1
 #               #
+
+CAtLagrangePoint = getJacobiC(omegaValues(currentPoint[0], currentPoint[1], mu, True)[0], 0, 0)
 
 # Initial conditions (Vertical Velocity Case)
 TargetC = CAtLagrangePoint - 1e-2 
