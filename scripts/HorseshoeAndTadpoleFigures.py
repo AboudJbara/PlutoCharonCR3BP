@@ -1,5 +1,5 @@
 # ============= Tadpole and Horseshoe Figures ================
-# Current configuration is on Figure 3, for figure 4, change
+# Current configuration is on Figure 3, for Figure 4, change
 # the following:
 #
 # - Figure 4   NOTE: To see full horseshoe, increase T (line 26) 
