@@ -1,7 +1,14 @@
 # ============= Zero-Velocity Curves ================
 # Current configuration is on Figure 1, for other
 # figures change the following:
-# Figure 2a: 
+#
+# - Figure 2a 
+#       - line 43: Change L4 -> L1
+#       - line 48: change 1e-3 -> 1e-2
+#
+# - Figure 2b 
+#       - line 43: Change L4 -> L1
+#       - line 48: Change 1e-3 - > -(1e-2)
 
 
 import os, sys
@@ -33,23 +40,20 @@ plotPointsY = []
 #Lagrange
 L1, L2, L3, L4, L5 = getLPoints(mu)
 
-currentPoint = L4
+currentPoint = L4   # Values are changed here.
 
 # Building Z-Grid
 Om = omegaValues(currentPoint[0], currentPoint[1], mu, True)[0]
 
-currentC = getJacobiC(Om,0,0) + 1e-3
+currentC = getJacobiC(Om,0,0) + 1e-3    # Values are changed here.
 
 xPoints = np.linspace(-1.5, 1.5, gridLength)
 yPoints = np.linspace(-1.5, 1.5, gridLength)
 
 for i in range(gridLength): 
     for j in range(gridLength):
-        ZGridValues[i][j] = 2 * omegaValues(xPoints[j], yPoints[i], mu, True)[0] #i AND j WERE SWAPPED
-        xPointsArray[i][j] = xPoints[j]
+        ZGridValues[i][j] = 2 * omegaValues(xPoints[j], yPoints[i], mu, True)[0]
         yPointsArray[i][j] = yPoints[i]
-
-# Creates Array with trajectory
 
 # Plotting
 fig, ax = plt.subplots()
@@ -57,12 +61,11 @@ fig, ax = plt.subplots()
 plt.rcParams['figure.dpi'] = 300
 plt.rcParams['savefig.dpi'] = 300
 
-plt.contour(xPoints, yPoints, ZGridValues, levels = [currentC]) #ALTER C
+plt.contour(xPoints, yPoints, ZGridValues, levels = [currentC]) 
 plt.xlim(-1.5,1.5)
 plt.ylim(-1.5,1.5)
 plt.xlabel("x-Axis")
 plt.ylabel("y-Axis")
-# plt.title(f"Zero-Velocity Curves with C = {currentC:.4f}")
 plt.title(r"Chaotic trajectory near L3 with $\mu$ = " + f"{mu:.4f} (Pluto-Charon)")
 
 SPACECRAFT = Circle((currentPoint[0] + 1e-2, currentPoint[1]), 0.02, facecolor = "red")
@@ -92,4 +95,3 @@ ax.set_aspect(1)
 
 
 plt.show()
-
