@@ -1,6 +1,6 @@
 import numpy as np
 
-from physics import equationsOfMotion, omegaValues, getJacobiC
+from .physics import equationsOfMotion, omegaValues, getJacobiC
 
 
 def positionChanger(startX, startY, startVX, startVY, time, mu): #Runge-Kutta Fourth Order Method
@@ -33,4 +33,5 @@ def propagate(x, y, vx, vy, time, steps, startingC, mu):   #positionChanger retu
             break
     jacobiMax = max(jacobiDriftTest)
     return trajXArray, trajYArray, jacobiMax, collided
+
     
