@@ -9,4 +9,4 @@ To install dependencies, cd to the folder containing ```requirements.txt``` on C
 ```bash
 pip install -r requirements.txt
 ```
-Then, download and extract the repo zip file, then run the demo, which is available on scripts/demo.py.
+Then download and extract the repo zip file, and run the demo available in scripts/demo.py.
