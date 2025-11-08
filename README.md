@@ -5,10 +5,10 @@ REQUIRES THE FOLLOWING PYTHON LIBRARIES TO RUN:
 * numpy
 * matplotlib
 
-To install dependencies, cd to the folder containing ```requirements.txt``` on Command Prompt, and run:
+To install dependencies, download and extract the repo zip file, then ```cd``` to the folder containing ```requirements.txt``` on Command Prompt, and run:
 ```bash
 pip install -r requirements.txt
 ```
-Then download and extract the repo zip file, and run the demo available in ```cr3bp_master.py```.
+Then, run the master file available in ```cr3bp_master.py```.
 Keep in mind, the master file only runs the horseshoe figures. For the remaining figures, 
 follow the instructions in the ```scripts``` files.
