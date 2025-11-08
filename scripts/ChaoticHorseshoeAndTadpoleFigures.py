@@ -90,9 +90,6 @@ if collided == True:
 # Plotting
 fig, ax = plt.subplots()
 
-plt.rcParams['figure.dpi'] = 300
-plt.rcParams['savefig.dpi'] = 300
-
 plt.plot(trajectoryX[:repetitions], trajectoryY[:repetitions], "-", linewidth = 0.6)
 # plt.contour(xPoints, yPoints, ZGridValues, levels = [currentC]) #ALTER C
 plt.xlim(-1.5,1.5)
