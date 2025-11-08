@@ -1,14 +1,18 @@
 # Pluto-Charon CR3BP
-This project simulates trajectories in the Pluto-Charon system using the Circular Restricted Three-Body Problem (CR3BP). Includes all figures + raw code.
+This repo contains a CR3BP simulator and the exact scripts used to generate every figure. The master script runs a canonical horseshoe, and the scripts include comments with small parameter changes for the rest of the figures.
 
 REQUIRES THE FOLLOWING PYTHON LIBRARIES TO RUN:
 * numpy
 * matplotlib
 
-To install dependencies, download and extract the repo zip file, then ```cd``` to the folder containing ```requirements.txt``` on Command Prompt, and run:
+To install dependencies (numpy & matplotlib), download and extract the repo zip file, then run:
 ```bash
+cd PlutoCharonCR3BP
 pip install -r requirements.txt
 ```
-Then, run the master file available in ```cr3bp_master.py```.
+To run demo:
+```bash
+python cr3bp_master.py
+```
 Keep in mind, the master file only runs the horseshoe figures. For the remaining figures, 
-follow the instructions in the ```scripts``` files.
+see comments at the topic of each file in ```scripts/```
