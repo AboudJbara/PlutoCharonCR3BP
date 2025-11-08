@@ -87,9 +87,6 @@ if collided == True:
 # Plotting
 fig, ax = plt.subplots()
 
-plt.rcParams['figure.dpi'] = 300
-plt.rcParams['savefig.dpi'] = 300
-
 plt.plot(trajectoryX[:repetitions], trajectoryY[:repetitions], "-", linewidth = 0.6)
 plt.xlim(-1.5,1.5)
 plt.ylim(-1.5,1.5)
