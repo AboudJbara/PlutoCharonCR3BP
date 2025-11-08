@@ -11,3 +11,4 @@ pip install -r requirements.txt
 ```
 Then download and extract the repo zip file, and run the demo available in cr3bp_master.py.
 Keep in mind, the master file only runs the horseshoe figures. For the remaining figures, 
+follow the instructions in the ```src``` files.
