@@ -58,9 +58,6 @@ for i in range(gridLength):
 # Plotting
 fig, ax = plt.subplots()
 
-plt.rcParams['figure.dpi'] = 300
-plt.rcParams['savefig.dpi'] = 300
-
 plt.contour(xPoints, yPoints, ZGridValues, levels = [currentC]) 
 plt.xlim(-1.5,1.5)
 plt.ylim(-1.5,1.5)
