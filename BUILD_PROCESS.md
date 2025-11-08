@@ -1,4 +1,4 @@
-<img width="926" height="279" alt="image" src="https://github.com/user-attachments/assets/9ceb20eb-de78-437b-95f4-689c195bc586" />## Build Process
+## Build Process
 
 The goal of this project was to model and visualize the zero-velocity curves, equilibrium points, and orbital behaviors, such as tadpole and horseshoe orbits, in the Pluto-Charon system, as well as in a simplified, classical low-mass-ratio model. 
 
