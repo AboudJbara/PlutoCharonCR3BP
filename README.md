@@ -14,5 +14,4 @@ To run demo:
 ```bash
 python cr3bp_master.py
 ```
-Keep in mind, the master file only runs the horseshoe figures. For the remaining figures, 
-see comments at the topic of each file in ```scripts/```
+Keep in mind, the master file only runs the horseshoe figures. For the remaining figures, see `figures/`, and to reproduce each one, see comments at the topic of each file in ```scripts/```.
