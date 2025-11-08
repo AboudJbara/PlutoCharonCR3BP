@@ -2,7 +2,7 @@
 # Current configuration is on Figure 5, for figure 6, change
 # the following:
 #
-# - Figure 4   NOTE: To see full horseshoe, increase T (line 26) 
+# - Figure 6   NOTE: To see full horseshoe, increase T (line 26) 
 #       - line 46: Change L4 -> L3
 #       - line 52: Change 5e-4 -> 1e-3
 #       - line 54: Change -0.04 -> -0.027
