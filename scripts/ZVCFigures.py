@@ -6,7 +6,7 @@
 #       - line 43: Change L4 -> L1
 #       - line 48: change 1e-3 -> 1e-2
 #
-# - ZVCAtL1Open
+# - ZVCAtL1Opened
 #       - line 43: Change L4 -> L1
 #       - line 48: Change 1e-3 - > -(1e-2)
 
