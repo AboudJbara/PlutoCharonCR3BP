@@ -1,8 +1,8 @@
 # ============= Chaotic Transit at Neck Figures ================
-# Current configuration is on Figure 7a, for figure 7b, change
+# Current configuration is on ReflectionAtL1, for TransitAtL1, change
 # the following:
 #
-# - Figure 7b 
+# - TransitAtL1 
 #       - line 48: Change 1e-2 -> -(1e-2)
 
 
