@@ -1,12 +1,12 @@
 # ============= Zero-Velocity Curves ================
-# Current configuration is on Figure 1, for other
+# Current configuration is on ZVCAtL4, for other
 # figures change the following:
 #
-# - Figure 2a 
+# - ZVCAtL1Closed 
 #       - line 43: Change L4 -> L1
 #       - line 48: change 1e-3 -> 1e-2
 #
-# - Figure 2b 
+# - ZVCAtL1Open
 #       - line 43: Change L4 -> L1
 #       - line 48: Change 1e-3 - > -(1e-2)
 
