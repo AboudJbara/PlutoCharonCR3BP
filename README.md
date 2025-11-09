@@ -1,13 +1,15 @@
 # Pluto-Charon CR3BP
-This repo contains a CR3BP simulator and the exact scripts used to generate every figure. The master script runs a canonical horseshoe, and the scripts include comments with small parameter changes for the rest of the figures.
+This repository contains a CR3BP simulator along with the exact scripts used to generate each figure. The master script reproduces the canonical horseshoe orbit, while the individual figure scripts include comments detailing the small parameter changes needed to create the other results.
+
+For the paper based on these results, see: https://arxiv.org/abs/2510.13479.
+Full derivations of the equations and system setup are included in the paper.
 
 REQUIRES THE FOLLOWING PYTHON LIBRARIES TO RUN:
 * numpy
 * matplotlib
 
-To install dependencies (numpy & matplotlib), download and extract the repo zip file, then run:
+To install dependencies (numpy & matplotlib), download and extract the repository zip file. Then, open Command Prompt (or Terminal), navigate to the extracted folder (for example, ```cd Downloads/PlutoCharonCR3BP```), and run:
 ```bash
-cd PlutoCharonCR3BP
 pip install -r requirements.txt
 ```
 To run demo:
