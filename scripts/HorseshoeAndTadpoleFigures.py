@@ -1,5 +1,5 @@
 # ============= Tadpole and Horseshoe Figures ================
-# Current configuration is on ChaoticTadpole, for SmoothHorseshoe, change
+# Current configuration is on SmoothTadpole, for SmoothHorseshoe, change
 # the following:
 #
 # - SmoothHorseshoe   NOTE: To see full horseshoe, increase T (line 26) 
