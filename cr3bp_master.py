@@ -139,7 +139,7 @@ currentPoint = L3
 CAtLagrangePoint = getJacobiC(omegaValues(currentPoint[0], currentPoint[1], True)[0], 0, 0)
 
 # Initial conditions (Vertical Velocity Case)
-TargetC = CAtLagrangePoint - 5e-4
+TargetC = CAtLagrangePoint - 5e-5
 
 x = currentPoint[0] - 0.027
 y = currentPoint[1] 
