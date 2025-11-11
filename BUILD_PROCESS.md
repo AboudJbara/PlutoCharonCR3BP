@@ -2,9 +2,9 @@
 
 The goal of this project was to model and visualize the zero-velocity curves, equilibrium points, and orbital behaviors, such as tadpole and horseshoe orbits, in the Pluto-Charon system, as well as in a simplified, classical low-mass-ratio model. 
 
-Everything was nondimensionalized. The primary separation, total mass, and angular rate were all set to 1. The primaries were placed at (-μ, 0) and (1 - μ, 0). The project uses two separate values of μ, the first is the real Pluto-Charon mass ratio (~0.11), and a low-mass ratio to show traditional orbits (0.001)
+Everything was nondimensionalized. The separation between the primaries, total mass, and angular rate were all set to 1. The primaries were placed at (-μ, 0) and (1 - μ, 0). The project uses two separate values of μ, the first is the real Pluto-Charon mass ratio (~0.11), and a low-mass ratio to show traditional orbits (0.001)
 
-The potential and its gradients were defined with the function ```omegaValues()``` and the Jacobi constant was derived from the formula C = 2Ω - (vx² + vy²). The collinear Lagrange points were found with Newton-Raphson iteration, with each point having its own distinct branch equation, since each one requires a different sign convention. L4 and L5 were defined analytically, with known formulas. 
+The potential and its gradients were defined with the function ```omegaValues()``` and the Jacobi constant was calculated with the formula C = 2Ω - (vx² + vy²). The collinear Lagrange points were found with Newton-Raphson iteration, with each point having its own distinct branch equation, since each one requires a different sign convention. L4 and L5 were defined with known formulas. 
 
 The equations of motion were integrated using a fourth-order Runge-Kutta (RK4) method. Earlier versions would drift due to step-size errors, but this was later fixed. The propagation loop records positions, checks if there is a collision, and creates arrays that represent the trajectory of the massless particle. The time step (h) was kept to 5 x 10⁻⁴ throughout scripts (although it was increased to 5 x 10⁻³ in the master file for quicker processing times). The total duration ranged from 30 to 300, and can be varied to represent different types of orbits.
 
@@ -18,4 +18,4 @@ Each .py file in /scripts corresponds to a figure, with comments describing whic
 
 Validation was done by checking that the Jacobi drift stayed below 10⁻⁵, and that halving the step size produced consistent results. We also ensured that trajectories never crossed their own zero-velocity boundaries. The results for a small μ were smooth and conserved, while for the Pluto-Charon μ were irregular and chaotic, confirming the code's correctness and sensitivity.
 
-This simulator is limited to the planar, circular case of the Pluto-Charon system. It ignores the eccentricity of orbits, although the structure can be extended to include them later. The final code provides a compact, self-contained implementation that reproduces textbook CR3BP behavior and demonstrates the transition from stability to chaos with an increasing mass ratio.
+This simulator is limited to the planar, circular case of the Pluto-Charon system. It ignores the eccentricity of orbits, although the structure can be extended to include them later (ER3BP). The final code provides a compact implementation that reproduces textbook CR3BP behavior and demonstrates the transition from stability to chaos with an increasing mass ratio.
