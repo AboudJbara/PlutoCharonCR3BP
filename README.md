@@ -1,10 +1,11 @@
-# Pluto-Charon CR3BP
-This repository contains a CR3BP simulator along with the exact scripts used to generate each figure. The master script reproduces the canonical horseshoe orbit, while the individual figure scripts include comments detailing the small parameter changes needed to create the other results.
+# Pluto-Charon CR3BP Simulator
+This repository contains a numerical simulator for the circular restricted three-body problem (CR3BP), applied to the Pluto–Charon system. The main script (`cr3bp_master.py`) reproduces the canonical horseshoe orbit, while the additional scripts in the `scripts/` directory generate the nine figures shown in the accompanying paper.
 
-For the paper based on these results, see: https://arxiv.org/abs/2510.13479.
-Full derivations of the equations and system setup are included in the paper.
+Full derivations of the equations of motion and system setup appear in the paper: https://arxiv.org/abs/2510.13479.
 
-REQUIRES THE FOLLOWING PYTHON LIBRARIES TO RUN:
+
+## Dependencies
+This project requires the following Python libraries:
 * numpy
 * matplotlib
 
@@ -12,8 +13,21 @@ To install dependencies (numpy & matplotlib), download and extract the repositor
 ```bash
 pip install -r requirements.txt
 ```
-To run demo:
+## Running the Demo
+To run the demo:
 ```bash
 python cr3bp_master.py
 ```
-Keep in mind, the master file only runs the horseshoe figures. For the remaining figures, see `figures/`, and to reproduce each one, see comments at the topic of each file in ```scripts/```.
+The demo reproduces the canonical horseshoe figure shown in the paper.
+
+Each figure in the paper corresponds to a script in the scripts/ directory, which includes brief comments explaining the parameter modifications required to generate each result.
+
+Rendered figures appear in the figures/ directory.
+
+## Environment
+Tested using:
+* Python 3.12.10
+* numpy 2.3.2
+* matplotlib 3.10.5
+  
+Tested on Windows.
