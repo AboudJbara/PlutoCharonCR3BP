@@ -8,6 +8,7 @@
 #       - line 51: Change -0.04 -> -0.027
 #       - line 52: Change -0.03 -> 0
 #       - REPLACE lines 57-59 with lines 62-63
+#       - Increase the value of T on line 27 to 500
 
 import os, sys
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
@@ -22,7 +23,7 @@ from src.integrator import *
 # Parameters
 mu = 0.001
 
-time = (5e-4)
+time = (5e-3)
 T = 150     # Increase this value for more librations.
 repetitions = int(T/time)
 gridLength = 300 # Grid goes from bottom left to bottom right to top right
