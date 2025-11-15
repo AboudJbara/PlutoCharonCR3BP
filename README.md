@@ -20,7 +20,7 @@ python cr3bp_master.py
 ```
 The demo reproduces the canonical horseshoe figure shown in the paper.
 
-Each figure in the paper corresponds to a script in the `scripts/` directory, which includes brief comments explaining the parameter modifications required to generate each result.
+Each figure in the paper corresponds to a script in the `scripts/` directory, which includes brief comments explaining the parameter modifications required to generate each result. Each script may take up to 20 seconds to run.
 
 Rendered figures appear in the figures/ directory.
 
